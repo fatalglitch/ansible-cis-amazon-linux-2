@@ -16,6 +16,7 @@
     - section-3
     - "3.5.2.3"
     - not-scored
+  when: ipv6_enable
 
 - name: 3.5.2.3 - Ensure IPv6 outbound and established connections are configured
   iptables:
@@ -30,6 +31,7 @@
     - section-3
     - "3.5.2.3"
     - not-scored
+  when: ipv6_enable
 
 - name: 3.5.2.3 - Ensure IPv6 outbound and established connections are configured
   iptables:
@@ -44,6 +46,7 @@
     - section-3
     - "3.5.2.3"
     - not-scored
+  when: ipv6_enable
 
 - name: 3.5.2.3 - Ensure IPv6 outbound and established connections are configured
   iptables:
@@ -58,6 +61,7 @@
     - section-3
     - "3.5.2.3"
     - not-scored
+  when: ipv6_enable
 
 - name: 3.5.2.3 - Ensure IPv6 outbound and established connections are configured
   iptables:
@@ -72,6 +76,7 @@
     - section-3
     - "3.5.2.3"
     - not-scored
+  when: ipv6_enable
 
 - name: 3.5.2.3 - Ensure IPv6 outbound and established connections are configured
   iptables:
@@ -86,3 +91,4 @@
     - section-3
     - "3.5.2.3"
     - not-scored
+  when: ipv6_enable

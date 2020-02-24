@@ -23,3 +23,9 @@
 
 - name: flush handlers
   meta: flush_handlers
+
+- name: Generate Report
+  become: no
+  local_action: template src=cis_report.j2 dest=/tmp/cisbenchmark.txt
+  run_once: True
+  changed_when: False

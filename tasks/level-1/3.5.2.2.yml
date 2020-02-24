@@ -14,6 +14,7 @@
     - section-3
     - "3.5.2.2"
     - scored
+  when: ipv6_enable
 
 - name: 3.5.2.2 - Ensure IPv6 loopback traffic is configured(-o lo)
   iptables:
@@ -26,6 +27,7 @@
     - section-3
     - "3.5.2.2"
     - scored
+  when: ipv6_enable
 
 - name: 3.5.2.2 - Ensure IPv6 loopback traffic is configured(-i 127.0.0.1/8)
   iptables:
@@ -38,3 +40,4 @@
     - section-3
     - "3.5.2.2"
     - scored
+  when: ipv6_enable

@@ -34,6 +34,12 @@
   when: in_vm is not defined
   tags: always
 
+- name: Network Settings Defined?
+  fail:
+    msg: "Please set ipv6_enabled to true or false"
+  when: ipv6_enable is not defined
+  tags: always
+
 - name: List Level-1 exclusions
   debug:
     var: cis_level_1_exclusions
